@@ -13,7 +13,7 @@ git clone https://github.com/yliniemi/primer
 ### Prerequisites for Debian 12 and above
 
 ```console
-sudo apt install cmake pkg-config
+sudo apt install cmake
 ```
 
 
