@@ -4,7 +4,6 @@
 ## Installation
 
 ```console
-sudo apt install 
 git clone https://github.com/yliniemi/primer
 ```
 
@@ -35,9 +34,7 @@ make
 
 Example
 ```console
-./primer --bitMaskFile "hujgfavr"
+./primer
 ```
-
-### Keyboard shortcuts
 
 
