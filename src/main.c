@@ -208,10 +208,10 @@ int main()
     int64_t end_time_ns = nano_time();
     int64_t delta_time_ns = end_time_ns - start_time_ns;
     
-    printf("Calculating them took %lld hours, %lld minutes and %lld seconds\n",
-        delta_time_ns / 1000000000 / 60 / 60,
-        delta_time_ns / 1000000000 / 60,
-        delta_time_ns / 1000000000);
+    int64_t hours = delta_time_ns / 1000000000 / 60 / 60;
+    int64_t minutes = delta_time_ns / 1000000000 / 60 - hours * 60;
+    int64_t seconds = delta_time_ns / 1000000000 - minutes * 60 - hours * 60 * 60;
+    printf("Calculating them took %lld hours, %lld minutes and %lld seconds\n", hours, minutes, seconds);
     
     int64_t written = 0;
     FILE *f;
